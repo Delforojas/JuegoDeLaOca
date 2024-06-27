@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><!-- Encabezado del documento:Aquí se incluyen los metadatos del documento y se enlaza el archivo CSS externo.-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El juego de la Oca</title>
+    <link rel="stylesheet" href="css/EstiloSeleccion.css">
+    
+</head>
+<body><!-- Contenido principal: Aquí se encuentra todo el contenido visible de la página. -->
+    
+    <div id="contenedor">  <!-- Aquí se incluye todo el contenido principal de la página, 
+                                como el título del juego, el formulario
+                                 y cualquier otro elemento relacionado con la interfaz de usuario. -->
+
+        <h2>EL JUEGO DE LA OCA</h2><!-- Título principal del juego -->
+
+        <h1>Selecciona el número de jugadores</h1><!--Titulo para la selección del número de jugadores -->
+
+        <form id="myForm">   <!--Formulario que contiene la selección del número de jugadores 
+                             y un botón para aceptar la selección. -->
+            <label for="numeroJugadores"></label>
+            <select id="numeroJugadores">
+                <option value="2">2 Jugadores</option>
+                <option value="3">3 Jugadores</option>
+                <option value="4">4 Jugadores</option>
+            </select>
+
+            <button type="button" onclick="redireccionar()">Aceptar</button> 
+            <!--Elemento button que tiene la accion predeterminada de enviar datos de un formulario   -->  
+        </form>
+
+    </div>
+    
+    <img id="imagenPortada" src="imagenes/Imagenportada.jpg" alt="Juego de la oca">
+    <!--Imagen de portada (<img>): Muestra la imagen de portada del juego. -->
+
+    <script src="JS/seleccion.js"></script>
+    <!--Enlaza el archivo JavaScript externo para manejar la funcionalidad de redireccionamiento.  -->
+</body>
+</html>
+

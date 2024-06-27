@@ -1,0 +1,123 @@
+/* Estilos para los colores de los jugadores */
+.rojo {
+    color: red;
+}
+
+.azul {
+    color: blue;
+}
+
+.verde {
+    color: green;
+}
+
+.amarillo {
+    color: yellow;
+}
+
+
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;/* Cambiar el tipo de letra */
+    background-color: green;/* Cambiar el color de fondo */
+    display: flex; /* Utiliza el modelo de caja flexible */
+    justify-content: center;/* Centra horizontalmente los elementos hijos */
+    align-items: center; /* Centra verticalmente los elementos hijos */
+    height: 100vh;/* Establece la altura del cuerpo al 100% del viewport */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+/* Estilos para el contenedor principal */
+#contenedorPrincipal {
+    text-align: center;/* Centra horizontalmente el contenido dentro del contenedor */
+}
+
+/* Estilos para el título secundario */
+h2 {
+    color: blue;/* Cambiar color del texto a azul */
+    font-size: 50px;/* Cambiar tamaño de la fuente */
+    font-family: Arial, sans-serif;/* Cambiar tipo de fuente */
+    text-align: center;/* Centrar el texto */
+    margin-top: 20px;/* Espacio superior */
+}
+
+/* Estilos para el título principal */
+h1 {
+    text-align: center;/* Centrar el texto */
+    color: yellow;/* Cambiar el color del texto */
+}
+
+/* Estilos para la imagen de portada */
+#imagenPortada {
+    width: 200px;/* Ancho de la imagen */
+    height: auto;/* Altura ajustada automáticamente */
+    position: absolute;/* Posición absoluta */
+    top: 50px;/* Distancia desde la parte superior */
+    left: 50px;/* Distancia desde la izquierda */
+}
+
+/* Estilos para las etiquetas */
+label {
+    display: block; /* Hace que cada etiqueta se muestre en una línea separada */
+    margin-bottom: 5px; /* Agrega un espacio inferior de 5px entre cada etiqueta */
+    font-size: 18px; /* Establece el tamaño de la fuente de las etiquetas en 18px */
+    color: white; /* Cambia el color del texto de las etiquetas a blanco */
+}
+
+
+/* Estilos para las etiquetas y los elementos de selección */
+label,
+select {
+    display: block; /* Hace que cada etiqueta y cada elemento de selección se muestren en una línea separada */
+    margin-bottom: 10px; /* Agrega un espacio inferior de 10px entre cada etiqueta y elemento de selección */
+    font-size: 18px; /* Establece el tamaño de la fuente de las etiquetas y elementos de selección en 18px */
+}
+
+/* Estilos para los inputs de tipo texto */
+input[type="text"] {
+    width: calc(100% - 20px);/* Establece el ancho de los inputs de tipo texto al 100% del contenedor menos 20px */
+    /* Reducir el ancho de los inputs de texto en 20px para dejar espacio para el padding */
+    background-color: white; /* Cambiar el color de fondo de los inputs de tipo texto a blanco */
+}
+
+/* Estilos para inputs y selecciones */
+input,
+select {
+    padding: 8px; /* Agrega relleno interno de 8px alrededor del contenido */
+    width: calc(100% - 16px); /* Ajusta el ancho del elemento al 100% del contenedor menos 16px */
+    border: 1px solid #ccc; /* Agrega un borde sólido de 1px de color gris */
+    border-radius: 5px; /* Aplica un radio de borde de 5px para suavizar las esquinas */
+    margin-bottom: 10px; /* Agrega un margen inferior de 10px */
+    box-sizing: border-box; /* Hace que el ancho del elemento incluya el relleno y el borde, evitando que estos se sumen al ancho total */
+    background-color: #007bff; /* Cambia el color de fondo de los inputs y selecciones a azul */
+}
+
+/* Estilos para las selecciones */
+select {
+    padding: 8px; /* Agrega relleno interno de 8px alrededor del contenido */
+    width: 100%; /* Establece el ancho de las selecciones al 100% del contenedor */
+    border: 1px solid #ccc; /* Agrega un borde sólido de 1px de color gris */
+    border-radius: 5px; /* Aplica un radio de borde de 5px para suavizar las esquinas */
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin: 0 auto; /* Centra horizontalmente la selección dentro de su contenedor */
+    background-color: #f33131; /* Cambia el color de fondo de las selecciones a rojo */
+}
+
+
+/* Estilos para los botones */
+button {
+    padding: 10px 20px; /* Agrega relleno interno de 10px arriba y abajo, y 20px a los lados */
+    font-size: 16px; /* Establece el tamaño de la fuente en 16px */
+    background-color: #007bff; /* Cambia el color de fondo de los botones a azul */
+    color: #fff; /* Cambia el color del texto de los botones a blanco */
+    border: none; /* Elimina el borde de los botones */
+    border-radius: 5px; /* Aplica un radio de borde de 5px para suavizar las esquinas */
+    cursor: pointer; /* Establece el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Agrega una transición suave al cambiar el color de fondo */
+    margin-top: 5px; /* Agrega un margen superior de 5px */
+}
+
+/* Estilos al pasar el ratón sobre los botones */
+button:hover {
+    background-color: #b35100;  /* Cambiar el color de fondo al pasar el ratón */
+}

@@ -1,0 +1,181 @@
+body {
+    margin: 0px; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0px; /* Elimina el relleno predeterminado del cuerpo */
+    background-color: green; /* Establece el color de fondo del cuerpo */
+}
+
+h1 {
+    text-align: center; /* Centra el texto del encabezado */
+    color: yellow; /* Establece el color del texto del encabezado */
+    font-family: Arial, sans-serif; /* Especifica la fuente del encabezado */
+    margin-bottom: 20px; /* Agrega un margen inferior al encabezado */
+}
+
+#imagenPortada {
+    width: 200px; /* Ancho de la imagen de portada */
+    height: auto; /* Altura ajustada automáticamente de la imagen de portada */
+    position: absolute; /* Establece la posición absoluta */
+    top: 50px; /* Distancia desde la parte superior */
+    left: 50px; /* Distancia desde la izquierda */
+}
+
+#tablero {
+    position: absolute; /* Establece la posición absoluta */
+    top: 200px; /* Distancia desde la parte superior */
+    left: 200px; /* Distancia desde la izquierda */
+    width: 700px; /* Ancho del tablero */
+    height: 150px; /* Altura del tablero */
+    margin: 50px; /* Margen exterior del tablero */
+    padding: 50px; /* Relleno del tablero */
+    padding-bottom: 100px; /* Relleno inferior del tablero */
+    border: 5px outset red; /* Borde con relieve rojo */
+    text-align: center; /* Centra el contenido del tablero */
+    background-image: url('ruta/de/la/imagen.jpg');
+    background-size: contain; /* Ajusta la imagen de fondo al tamaño del contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    color: white; /* Color del texto del tablero */
+    z-index: 1; /* Establece el índice de apilamiento */
+}
+
+.ficha {
+    position: absolute; /* Establece la posición absoluta */
+    width: 20px; /* Ancho de la ficha */
+    height: 20px; /* Altura de la ficha */
+    border-radius: 50%; /* Borde redondeado para crear una forma de círculo */
+    z-index: 2; /* Establece el índice de apilamiento */
+}
+/* Establecer la posición final de la ficha */
+#ficha.final {
+    left: 1020px; /* Posición final en el eje horizontal */
+    /* Puedes establecer otras propiedades CSS necesarias para la posición final */
+}
+
+.verde {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 410px; /* Distancia desde la parte superior */
+    left: 255px; /* Distancia desde la izquierda */
+    border: 1px solid #2ECC71; /* Borde de 1px sólido con color verde claro */
+    border-radius: 20px; /* Borde redondeado */
+    width: 20px; /* Ancho de la ficha */
+    height: 20px; /* Altura de la ficha */
+    background-color: #2ECC71; /* Color de fondo verde claro */
+}
+.azul {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 390px; /* Distancia desde la parte superior */
+    left: 255px; /* Distancia desde la izquierda */
+    border: 1px solid #2422c0; /* Borde de 1px sólido con color azul */
+    border-radius: 20px; /* Borde redondeado */
+    width: 20px; /* Ancho de la ficha */
+    height: 20px; /* Altura de la ficha */
+    background-color: #2e31cc; /* Color de fondo azul */
+}
+.rojo {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 390px; /* Distancia desde la parte superior */
+    left: 255px; /* Distancia desde la izquierda */
+    border: 1px solid #cc200a; /* Borde de 1px sólido con color rojo */
+    border-radius: 20px; /* Borde redondeado */
+    width: 20px; /* Ancho de la ficha */
+    height: 20px; /* Altura de la ficha */
+    background-color: #e41313; /* Color de fondo rojo */
+}
+.amarillo {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 410px; /* Distancia desde la parte superior */
+    left: 255px; /* Distancia desde la izquierda */
+    border: 1px solid #f1dc1b; /* Borde de 1px sólido con color amarillo */
+    border-radius: 20px; /* Borde redondeado */
+    width: 20px; /* Ancho de la ficha */
+    height: 20px; /* Altura de la ficha */
+    background-color: #e9db1e; /* Color de fondo amarillo */
+}
+#ficha.final,
+.verde.final,
+.azul.final,
+.rojo.final,
+.amarillo.final {
+    left: 1030px; /* Posición final en el eje horizontal, ajustada para que no pase de 1030px */
+}
+
+
+#jugadores {
+    text-align: left; /* Alineación del texto a la izquierda */
+    margin: 0; /* Margen superior e inferior eliminado */
+}
+
+.jugador-container {
+    display: inline-block; /* Mostrar como elemento en línea */
+    vertical-align: top; /* Alineación vertical superior */
+    margin-right: 20px; /* Margen derecho */
+    /* Establecer posición relativa para posicionar elementos hijos absolutamente */
+    position: relative;
+}
+
+
+.jugador {
+    margin-bottom: 10px; /* Margen inferior */
+    color: blue; /* Color del texto */
+    font-family: Arial, sans-serif; /* Fuente */
+    font-size: 20px; /* Tamaño de fuente */
+    font-weight: bold;
+    display: inline-block; /* Mostrar como elemento en línea */
+    vertical-align: top; /* Alineación vertical superior */
+    margin-right: 20px; /* Margen derecho */
+
+}
+.pulsarDado {
+   
+    color: red;
+    font-weight: bold;
+}
+
+
+#btn3 {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 400px; /* Distancia desde la parte superior */
+    height: 60px; /* Altura del botón */
+    border: 2px solid #09dd62; /* Borde de 2px sólido con color verde */
+    font-size: 16px; /* Establece el tamaño de la fuente en 16px */
+    background-color: #007bff; /* Cambia el color de fondo de los botones a azul */
+    color: #fff; /* Cambia el color del texto de los botones a blanco */
+    border: none; /* Elimina el borde de los botones */
+    border-radius: 5px; /* Aplica un radio de borde de 5px para suavizar las esquinas */
+    cursor: pointer; /* Establece el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Agrega una transición suave al cambiar el color de fondo */
+}
+#btn3:hover {
+    background-color: #b35100; /* Cambia el color de fondo cuando el cursor está sobre el botón */
+}
+#tablaJugadoresFinalizados {
+    width: 380px;/*Ancho de la Tabla*/
+    height: 50px;/*Altura de la tabla*/
+    position: absolute; /* Posición absoluta */
+    top: 50px; /* Distancia desde la parte superior */
+    left: 980px; /* Distancia desde la izquierda */
+    color: red; /* Color del texto */
+    font-family: Arial, sans-serif; /* Fuente */
+    font-size: 20px; /* Tamaño de fuente */
+}
+
+#tablaJugadoresFinalizados th, #tablaJugadoresFinalizados td {
+    
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+#tablaJugadoresFinalizados th {
+    background-color: yellow; /* Fondo amarillo para las celdas de encabezado */
+    color:green;
+}
+
+#tablaJugadoresFinalizados tr:nth-child(even) {
+    background-color: #ddd; /* Fondo amarillo para filas pares */
+    color:red;; /* Texto amarillo para filas pares */
+}
+#tablaJugadoresFinalizados tr:nth-child(odd) {
+    background-color: lightblue; /* Fondo para filas impares */
+    color: green; /* Color de texto para filas impares */
+}
+#tablaJugadoresFinalizados tr:hover {
+    background-color: #ddd; /* Fondo gris claro cuando se pasa el ratón por encima */
+}

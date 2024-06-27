@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero</title>
+    <link rel="stylesheet" href="css/EstiloTablero.css">
+
+<body>
+    <h1 style="text-align: center;">Lista de Jugadores</h1><!-- Título centrado -->
+    <div id="jugadores" style="text-align: center;"></div><!-- Contenedor de jugadores centrado -->
+    <div id="tablero" style="background-image: url('imagenes/En blanco Linea recta.JPG');"></div><!-- Contenedor del tablero -->
+    </button><!-- Botón para lanzar el dado -->
+    <button id="btn3">Reiniciar</button><!-- Botón para reiniciar -->
+    <table id="tablaJugadoresFinalizados"><!-- Definición de la tabla de jugadores finalizados -->
+        <thead><!-- Encabezado de la tabla -->
+            <tr><!-- Fila de encabezado -->
+                <th>Nombre del jugador</th><!-- Celda de encabezado para el nombre del jugador -->
+                <th>Posición</th><!-- Celda de encabezado para la posición del jugador -->
+            </tr>
+        </thead>
+        <tbody> <!-- Cuerpo de la tabla para los datos -->
+            
+        </tbody> <!-- Aquí se llenará dinámicamente con los jugadores finalizados -->
+    </table>
+    
+    <!-- Imagen de portada del juego -->
+    <img id="imagenPortada" src="imagenes/Imagenportada.jpg" alt="Juego de la oca">
+
+    <!-- Importar jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Importar el script de la lógica del juego -->
+    <script src="JS/LogicaJuego.js"></script>
+</body>
+
+</html>
